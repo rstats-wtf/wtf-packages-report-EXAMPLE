@@ -1,7 +1,7 @@
 library(fs)
+library(purrr)
 
-files <- c(
-  dir_ls(here("data")),
-  dir_ls(here("figs"))
-)
+dirs <- c(here("data"), here("figs"))
+dirs <- keep(dirs, dir_exists)
+files <- map(dirs, dir_ls) %>% flatten_chr()
 file_delete(files)
