@@ -9,6 +9,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+library(tidyverse)
 ```
 
 # packages-report
@@ -25,6 +26,12 @@ apt_freqtable <- readr::read_csv(freqtable_file)
 I have `r sum(apt_freqtable$n)` add-on packages installed.
 
 Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
+
+```{r, echo = FALSE}
+apt_freqtable %>% 
+  mutate(prop = round(prop, 2)) %>% 
+  knitr::kable()
+```
 
 ![](figs/built-barchart.png)
 
