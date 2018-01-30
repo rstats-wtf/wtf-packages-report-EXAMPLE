@@ -26,9 +26,7 @@ I have `r sum(apt_freqtable$n)` add-on packages installed.
 
 Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
 
-```{r, echo = FALSE}
-knitr::include_graphics(here::here("figs", "built-barchart.png"))
-```
+![](figs/built-barchart.png)
 
 ### How analysis was done
 

@@ -12,7 +12,7 @@ I have 845 add-on packages installed.
 
 Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
 
-<img src="/Users/jenny/rrr/what-they-forgot/packages-report/figs/built-barchart.png" width="1612" />
+![](figs/built-barchart.png)
 
 ### How analysis was done
 
