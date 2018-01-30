@@ -1,5 +1,6 @@
 library(fs)
 library(purrr)
+library(here)
 
 dirs <- c(here("data"), here("figs"))
 dirs <- keep(dirs, dir_exists)
