@@ -14,4 +14,4 @@ p <- ggplot(apt_freqtable, aes(x = Built, y = n)) +
 
 ## p
 
-ggsave(here("figs", "built-barchart.png"), p)
+ggsave(here("figs", "built-barchart.png"), p, height = 3)
