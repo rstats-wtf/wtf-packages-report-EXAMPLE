@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# packages-report
+
+## Overview
+
+The goal of packages-report is to explore the packages in my R installation.
+
+```{r, include = FALSE}
+freqtable_file <- fs::dir_ls(here::here("data"), glob = "*freqtable.csv")
+apt_freqtable <- readr::read_csv(freqtable_file)
+```
+
+I have `r sum(apt_freqtable$n)` add-on packages installed.
+
+Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
+
+```{r, echo = FALSE}
+knitr::include_graphics(here::here("figs", "built-barchart.png"))
+```
+
+### How analysis was done
+
+[R/01_write-installed-packages.R](R/01_write-installed-packages.R) writes installed packages to file [data/installed_packages.csv](data/installed_packages.csv).
+
+[R/02_wrangle-packages.R](R/02_wrangle-packages.R) retains only add-on packages and the variables `Package` and `Built`. Creates frequency table. Writes to [data/add-on-packages.csv](data/add-on-packages.csv) and [data/add-on-packages-freqtable.csv](data/add-on-packages-freqtable.csv).
+
+[R/03_built-barchart.R](R/03_built-barchart.R) creates a barchart [figs/built-barchart.png](figs/built-barchart.png) from the frequency table.
