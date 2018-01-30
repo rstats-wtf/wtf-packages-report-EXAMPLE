@@ -21,10 +21,36 @@ Here's how they break down in terms of which version of R they were built under,
 
 ![](figs/built-barchart.png)
 
-### How analysis was done
+### Flow of the analysis
 
-[R/01\_write-installed-packages.R](R/01_write-installed-packages.R) writes installed packages to file [data/installed-packages.csv](data/installed-packages.csv).
-
-[R/02\_wrangle-packages.R](R/02_wrangle-packages.R) retains only add-on packages and the variables `Package` and `Built`. Creates frequency table. Writes to [data/add-on-packages.csv](data/add-on-packages.csv) and [data/add-on-packages-freqtable.csv](data/add-on-packages-freqtable.csv).
-
-[R/03\_barchart-packages-built.R](R/03_barchart-packages-built.R) creates a barchart [figs/built-barchart.png](figs/built-barchart.png) from the frequency table.
+<table>
+<colgroup>
+<col width="27%" />
+<col width="27%" />
+<col width="44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Input</th>
+<th>Script</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><a href="R/01_write-installed-packages.R" class="uri">R/01_write-installed-packages.R</a></td>
+<td><a href="data/installed-packages.csv" class="uri">data/installed-packages.csv</a></td>
+</tr>
+<tr class="even">
+<td><a href="data/installed-packages.csv" class="uri">data/installed-packages.csv</a></td>
+<td><a href="R/02_wrangle-packages.R" class="uri">R/02_wrangle-packages.R</a></td>
+<td><a href="data/add-on-packages.csv" class="uri">data/add-on-packages.csv</a><br><a href="data/add-on-packages-freqtable.csv" class="uri">data/add-on-packages-freqtable.csv</a></td>
+</tr>
+<tr class="odd">
+<td><a href="data/add-on-packages-freqtable.csv" class="uri">data/add-on-packages-freqtable.csv</a></td>
+<td><a href="R/03_barchart-packages-built.R" class="uri">R/03_barchart-packages-built.R</a></td>
+<td><a href="figs/built-barchart.png" class="uri">figs/built-barchart.png</a></td>
+</tr>
+</tbody>
+</table>
