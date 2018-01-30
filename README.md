@@ -23,6 +23,10 @@ Here's how they break down in terms of which version of R they were built under,
 
 ### Flow of the analysis
 
+Run [R/90\_make-clean.R](R/90_make-clean.R) to clean out downstream products.
+
+Run [R/95\_make-all.R](R/95_make-all.R) to re-run the analysis and re-render this README.
+
 <table>
 <colgroup>
 <col width="27%" />

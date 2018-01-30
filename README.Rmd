@@ -37,6 +37,10 @@ apt_freqtable %>%
 
 ### Flow of the analysis
 
+Run [R/90_make-clean.R](R/90_make-clean.R) to clean out downstream products.
+
+Run [R/95_make-all.R](R/95_make-all.R) to re-run the analysis and re-render this README.
+
 | Input                         | Script                        | Output                                            |
 |-------------------------------|-------------------------------|---------------------------------------------------|
 |                               | [R/01_write-installed-packages.R](R/01_write-installed-packages.R) | [data/installed-packages.csv](data/installed-packages.csv)                            |
