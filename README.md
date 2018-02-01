@@ -15,9 +15,9 @@ Here's how they break down in terms of which version of R they were built under,
 | Built |    n|  prop|
 |:------|----:|-----:|
 | 3.4.0 |  484|  0.57|
-| 3.4.1 |  103|  0.12|
+| 3.4.1 |  102|  0.12|
 | 3.4.2 |  100|  0.12|
-| 3.4.3 |  158|  0.19|
+| 3.4.3 |  159|  0.19|
 
 ![](figs/built-barchart.png)
 
