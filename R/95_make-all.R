@@ -2,11 +2,11 @@ library(fs)
 library(here)
 
 if (!dir_exists(here("data"))) {
-  dir_create("data")
+  dir_create(here("data"))
 }
 
 if (!dir_exists(here("figs"))) {
-  dir_create("figs")
+  dir_create(here("figs"))
 }
 
 source(here("R/01_write-installed-packages.R"))
