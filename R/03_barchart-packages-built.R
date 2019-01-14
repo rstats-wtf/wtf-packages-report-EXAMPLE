@@ -10,7 +10,7 @@ apt_freqtable <- read_csv(freqtable_file)
 ## apt_freqtable
 
 p <- ggplot(apt_freqtable, aes(x = Built, y = n)) +
-  geom_bar(stat = "identity")
+  geom_col()
 
 ## p
 
