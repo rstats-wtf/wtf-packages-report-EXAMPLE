@@ -36,7 +36,9 @@ README.
 | [data/installed-packages.csv](data/installed-packages.csv)               | [R/02\_wrangle-packages.R](R/02_wrangle-packages.R)                 | [data/add-on-packages.csv](data/add-on-packages.csv)<br>[data/add-on-packages-freqtable.csv](data/add-on-packages-freqtable.csv) |
 | [data/add-on-packages-freqtable.csv](data/add-on-packages-freqtable.csv) | [R/03\_barchart-packages-built.R](R/03_barchart-packages-built.R)   | [figs/built-barchart.png](figs/built-barchart.png)                                                                               |
 
-### Package versions
+<details>
+
+<summary>Session info</summary>
 
 ``` r
 devtools::session_info()
@@ -125,3 +127,5 @@ devtools::session_info()
 #> [1] /Users/jenny/resources/R/library
 #> [2] /Library/Frameworks/R.framework/Versions/3.5/Resources/library
 ```
+
+</details>
