@@ -46,3 +46,10 @@ Run [R/95_make-all.R](R/95_make-all.R) to re-run the analysis and re-render this
 |                               | [R/01_write-installed-packages.R](R/01_write-installed-packages.R) | [data/installed-packages.csv](data/installed-packages.csv)                            |
 | [data/installed-packages.csv](data/installed-packages.csv)        | [R/02_wrangle-packages.R](R/02_wrangle-packages.R)         | [data/add-on-packages.csv](data/add-on-packages.csv)<br>[data/add-on-packages-freqtable.csv](data/add-on-packages-freqtable.csv) |
 | [data/add-on-packages-freqtable.csv](data/add-on-packages-freqtable.csv) | [R/03_barchart-packages-built.R](R/03_barchart-packages-built.R)  | [figs/built-barchart.png](figs/built-barchart.png)                                |
+
+### Package versions
+
+```{r}
+devtools::session_info()
+```
+
