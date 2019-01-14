@@ -12,11 +12,11 @@ knitr::opts_chunk$set(
 library(tidyverse)
 ```
 
-# packages-report
+# wtf-packages-report
 
 ## Overview
 
-The goal of packages-report is to explore the packages in my R installation.
+The goal of wtf-packages-report is to explore the packages in my R installation.
 
 ```{r, include = FALSE}
 freqtable_file <- fs::dir_ls(here::here("data"), glob = "*freqtable.csv")

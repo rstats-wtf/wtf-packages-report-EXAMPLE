@@ -1,11 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# packages-report
+# wtf-packages-report
 
 ## Overview
 
-The goal of packages-report is to explore the packages in my R
+The goal of wtf-packages-report is to explore the packages in my R
 installation.
 
 I have 399 add-on packages installed.
