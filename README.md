@@ -52,7 +52,7 @@ devtools::session_info()
 #>  collate  en_CA.UTF-8                 
 #>  ctype    en_CA.UTF-8                 
 #>  tz       America/Chicago             
-#>  date     2019-01-14                  
+#>  date     2019-01-15                  
 #> 
 #> ─ Packages ──────────────────────────────────────────────────────────────
 #>  package     * version    date       lib source                          
